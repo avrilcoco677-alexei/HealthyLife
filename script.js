@@ -4,8 +4,10 @@ function calcularIMC(){
     let altura = parseFloat(document.getElementById("altura").value);
 
     if(!peso || !altura){
+
         document.getElementById("resultado").innerHTML =
         "Por favor completa todos los campos.";
+
         return;
     }
 
