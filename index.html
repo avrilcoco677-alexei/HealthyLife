@@ -1,304 +1,289 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HealthyLife | Nutrición y Bienestar Integral</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthyLife | Nutrición y Bienestar Integral</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-
-<nav>
-
-<div class="logo">
-    <h1>🌿 HealthyLife</h1>
-    <p>Nutrición y Bienestar Integral</p>
-</div>
-
-<ul>
-<li><a href="#inicio">Inicio</a></li>
-<li><a href="#nosotros">Nosotros</a></li>
-<li><a href="#servicios">Servicios</a></li>
-<li><a href="#equipo">Equipo</a></li>
-<li><a href="#planes">Planes</a></li>
-<li><a href="#tienda">Tienda</a></li>
-<li><a href="#imc">IMC</a></li>
-<li><a href="#contacto">Contacto</a></li>
-</ul>
-
-</nav>
-
-</header>
-
-<section id="inicio" class="hero">
-
-<h2>Transforma tu vida con una alimentación saludable</h2>
-
-<p>
-HealthyLife te acompaña en el camino hacia una mejor salud mediante planes nutricionales personalizados y asesoría profesional.
-</p>
-
-<a href="#planes">
-<button>Descubrir Planes</button>
-</a>
-
-</section>
-
-<section id="nosotros">
-
-<h2>Sobre HealthyLife</h2>
-
-<p>
-HealthyLife nació con el objetivo de promover hábitos saludables y mejorar la calidad de vida de las personas mediante una alimentación equilibrada. Creemos que una buena nutrición es la base para una vida plena y saludable.
-</p>
-
-<br>
-
-<h3>Fundadora</h3>
-
-<p>
-Hola, soy Avril Hernández. Fundé HealthyLife con la misión de ayudar a las personas a alcanzar sus objetivos de bienestar físico y emocional mediante orientación nutricional confiable y personalizada.
-</p>
-
-</section>
-
-<section class="estadisticas">
-
-<div class="stat">
-<h3>500+</h3>
-<p>Pacientes Atendidos</p>
-</div>
-
-<div class="stat">
-<h3>50+</h3>
-<p>Planes Personalizados</p>
-</div>
-
-<div class="stat">
-<h3>98%</h3>
-<p>Satisfacción</p>
-</div>
-
-<div class="stat">
-<h3>3</h3>
-<p>Años de Experiencia</p>
-</div>
-
-</section>
-
-<section id="servicios">
-
-<h2>Servicios</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Control de Peso</h3>
-<p>Planes enfocados en pérdida o aumento de peso.</p>
-</div>
-
-<div class="card">
-<h3>Nutrición Deportiva</h3>
-<p>Optimización del rendimiento físico.</p>
-</div>
-
-<div class="card">
-<h3>Nutrición Infantil</h3>
-<p>Alimentación adecuada para niños.</p>
-</div>
-
-<div class="card">
-<h3>Adultos Mayores</h3>
-<p>Planes adaptados a cada etapa de la vida.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="equipo">
-
-<h2>Nuestro Equipo</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Avril Hernández</h3>
-<p>Fundadora y Nutrióloga</p>
-</div>
-
-<div class="card">
-<h3>Alexei Padilla</h3>
-<p>Especialista en Nutrición Deportiva</p>
-</div>
-
-<div class="card">
-<h3>Anayeli Colin</h3>
-<p>Coach de Bienestar y Hábitos Saludables</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="planes">
-
-<h2>Planes Nutricionales</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Plan Básico</h3>
-<p>Plan alimenticio personalizado.</p>
-<h4>$499 MXN</h4>
-</div>
-
-<div class="card">
-<h3>Plan Premium</h3>
-<p>Seguimiento semanal y asesoría continua.</p>
-<h4>$899 MXN</h4>
-</div>
-
-<div class="card">
-<h3>Plan Deportivo</h3>
-<p>Nutrición especializada para deportistas.</p>
-<h4>$1,199 MXN</h4>
-</div>
-
-</div>
-
-</section>
-
-<section id="tienda">
-
-<h2>Tienda Saludable</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Avena Integral</h3>
-<p>$80 MXN</p>
-</div>
-
-<div class="card">
-<h3>Almendras Naturales</h3>
-<p>$120 MXN</p>
-</div>
-
-<div class="card">
-<h3>Té Verde</h3>
-<p>$90 MXN</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="imc">
-
-<h2>Calculadora IMC</h2>
-
-<div class="imc-box">
-
-<input type="number" id="peso" placeholder="Peso en kg">
-
-<input type="number" id="altura" placeholder="Altura en metros">
-
-<button onclick="calcularIMC()">
-Calcular IMC
-</button>
-
-<h3 id="resultado"></h3>
-
-</div>
-
-</section>
-
-<section id="testimonios">
-
-<h2>Testimonios</h2>
-
-<div class="cards">
-
-<div class="card">
-<p>"Gracias a HealthyLife mejoré mis hábitos alimenticios."</p>
-<strong>- María González</strong>
-</div>
-
-<div class="card">
-<p>"Excelente atención y resultados."</p>
-<strong>- Carlos Ramírez</strong>
-</div>
-
-<div class="card">
-<p>"Los planes nutricionales son muy completos."</p>
-<strong>- Ana Pérez</strong>
-</div>
-
-</div>
-
-</section>
-
-<section id="faq">
-
-<h2>Preguntas Frecuentes</h2>
-
-<div class="faq-item">
-<h3>¿Los planes son personalizados?</h3>
-<p>Sí, cada plan se adapta a las necesidades del usuario.</p>
-</div>
-
-<div class="faq-item">
-<h3>¿Ofrecen consultas virtuales?</h3>
-<p>Sí, contamos con asesorías en línea.</p>
-</div>
-
-<div class="faq-item">
-<h3>¿Cómo puedo agendar una cita?</h3>
-<p>Utilizando el formulario de contacto.</p>
-</div>
-
-</section>
-
-<section id="contacto">
-
-<h2>Agenda una Cita</h2>
-
-<form>
-
-<input type="text" placeholder="Nombre completo">
-
-<input type="email" placeholder="Correo electrónico">
-
-<input type="date">
-
-<textarea placeholder="Describe tu objetivo nutricional"></textarea>
-
-<button type="submit">
-Solicitar Cita
-</button>
-
-</form>
-
-</section>
-
-<footer>
-
-<h3>HealthyLife</h3>
-
-<p>Nutrición y Bienestar Integral</p>
-
-<p>© 2026 Todos los derechos reservados.</p>
-
-</footer>
-
-<script src="script.js"></script>
-
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>🌿 HealthyLife</h1>
+                <p>Nutrición y Bienestar Integral</p>
+            </div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#planes">Planes</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#imc">IMC</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h2>Transforma tu vida con una alimentación saludable</h2>
+        <p>HealthyLife te acompaña en el camino hacia una mejor salud mediante planes nutricionales personalizados y asesoría profesional.</p>
+        <a href="#planes">
+            <button>Descubrir Planes</button>
+        </a>
+    </section>
+
+    <section id="nosotros">
+        <h2>Sobre HealthyLife</h2>
+        <p>HealthyLife nació con el objetivo de promover hábitos saludables y mejorar la calidad de vida de las personas mediante una alimentación equilibrada. Creemos que una buena nutrición es la base para una vida plena y saludable.</p>
+        <br>
+        <h3>Fundadora</h3>
+        <p>Hola, soy Avril Hernández. Fundé HealthyLife con la misión de ayudar a las personas a alcanzar sus objetivos de bienestar físico y emocional mediante orientación nutricional confiable y personalizada.</p>
+    </section>
+
+    <section class="estadisticas">
+        <div class="stat">
+            <h3>500+</h3>
+            <p>Pacientes Atendidos</p>
+        </div>
+        <div class="stat">
+            <h3>50+</h3>
+            <p>Planes Personalizados</p>
+        </div>
+        <div class="stat">
+            <h3>98%</h3>
+            <p>Satisfacción</p>
+        </div>
+        <div class="stat">
+            <h3>3</h3>
+            <p>Años de Experiencia</p>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Control de Peso</h3>
+                <p>Planes enfocados en pérdida o aumento de peso.</p>
+            </div>
+            <div class="card">
+                <h3>Nutrición Deportiva</h3>
+                <p>Optimización del rendimiento físico.</p>
+            </div>
+            <div class="card">
+                <h3>Nutrición Infantil</h3>
+                <p>Alimentación adecuada para niños.</p>
+            </div>
+            <div class="card">
+                <h3>Adultos Mayores</h3>
+                <p>Planes adaptados a cada etapa de la vida.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipo">
+        <h2>Nuestro Equipo</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="images/avril.jpeg" alt="Avril Hernández" class="equipo-img">
+                <h3>Avril Hernández</h3>
+                <p>Fundadora y Nutrióloga</p>
+            </div>
+            <div class="card">
+                <img src="images/alexei.jpeg" alt="Alexei Padilla" class="equipo-img">
+                <h3>Alexei Padilla</h3>
+                <p>Especialista en Nutrición Deportiva</p>
+            </div>
+            <div class="card">
+                <img src="images/anayeli.jpeg" alt="Anayeli Colin" class="equipo-img">
+                <h3>Anayeli Colin</h3>
+                <p>Coach de Bienestar y Hábitos Saludables</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="planes">
+        <h2>Planes Nutricionales</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Plan Básico</h3>
+                <p>Plan alimenticio personalizado.</p>
+                <h4>$499 MXN</h4>
+            </div>
+            <div class="card">
+                <h3>Plan Premium</h3>
+                <p>Seguimiento semanal y asesoría continua.</p>
+                <h4>$899 MXN</h4>
+            </div>
+            <div class="card">
+                <h3>Plan Deportivo</h3>
+                <p>Nutrición especializada para deportistas.</p>
+                <h4>$1,199 MXN</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="tienda">
+        <h2>Tienda Saludable</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="images/avena.jpeg" alt="Avena Integral" class="producto-img">
+                <h3>Avena Integral</h3>
+                <p>$80 MXN</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="card">
+                <img src="images/almendras.jpeg" alt="Almendras" class="producto-img">
+                <h3>Almendras Naturales</h3>
+                <p>$120 MXN</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="card">
+                <img src="images/te-verde.jpeg" alt="Té Verde" class="producto-img">
+                <h3>Té Verde</h3>
+                <p>$90 MXN</p>
+                <button>Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="recetas">
+        <h2>Recetas Saludables</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="images/smoothie.jpeg" alt="Smoothie" class="producto-img">
+                <h3>Smoothie Antioxidante</h3>
+                <p>Frutos rojos, yogurt griego y avena.</p>
+            </div>
+            <div class="card">
+                <img src="images/ensalada.jpeg" alt="Ensalada" class="producto-img">
+                <h3>Ensalada Mediterránea</h3>
+                <p>Vegetales frescos, aceite de oliva y queso fresco.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="imc">
+        <h2>Calculadora IMC</h2>
+        <div class="imc-box">
+            <input type="number" id="peso" placeholder="Peso en kg">
+            <input type="number" id="altura" placeholder="Altura en metros (ej. 1.70)">
+            <button onclick="calcularIMC()">Calcular IMC</button>
+            <h3 id="resultado"></h3>
+        </div>
+    </section>
+
+    <section id="agua">
+        <h2>Calculadora de Agua Diaria</h2>
+        <div class="imc-box">
+            <input type="number" id="pesoAgua" placeholder="Peso en kg">
+            <button onclick="calcularAgua()">Calcular Agua</button>
+            <h3 id="resultadoAgua"></h3>
+        </div>
+    </section>
+
+    <section id="testimonios">
+        <h2>Testimonios</h2>
+        <div class="cards">
+            <div class="card">
+                <p>"Gracias a HealthyLife mejoré mis hábitos alimenticios."</p>
+                <strong>- María González</strong>
+            </div>
+            <div class="card">
+                <p>"Excelente atención y resultados."</p>
+                <strong>- Carlos Ramírez</strong>
+            </div>
+            <div class="card">
+                <p>"Los planes nutricionales son muy completos."</p>
+                <strong>- Ana Pérez</strong>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-item">
+            <h3>¿Los planes son personalizados?</h3>
+            <p>Sí, cada plan se adapta a las necesidades del usuario.</p>
+        </div>
+        <div class="faq-item">
+            <h3>¿Ofrecen consultas virtuales?</h3>
+            <p>Sí, contamos con asesorías en línea.</p>
+        </div>
+        <div class="faq-item">
+            <h3>¿Cómo puedo agendar una cita?</h3>
+            <p>Utilizando el formulario de contacto.</p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Agenda una Cita</h2>
+        <form>
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="date" required>
+            <textarea placeholder="Describe tu objetivo nutricional" required></textarea>
+            <button type="submit">Solicitar Cita</button>
+        </form>
+    </section>
+
+    <footer>
+        <h3>🌿 HealthyLife</h3>
+        <p>Nutrición y Bienestar Integral</p>
+        <p>Solicita una asesoría nutricional personalizada.</p>
+        <div class="redes">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">TikTok</a>
+            <a href="https://wa.me/524471673862">WhatsApp</a>
+        </div>
+        <p>© 2026 Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts para las calculadoras -->
+    <script>
+        function calcularIMC() {
+            const peso = parseFloat(document.getElementById('peso').value);
+            const altura = parseFloat(document.getElementById('altura').value);
+            const resultado = document.getElementById('resultado');
+
+            if (peso > 0 && altura > 0) {
+                const imc = (peso / (altura * altura)).toFixed(1);
+                let categoria = "";
+                
+                if (imc < 18.5) categoria = "Bajo peso";
+                else if (imc >= 18.5 && imc <= 24.9) categoria = "Peso normal";
+                else if (imc >= 25 && imc <= 29.9) categoria = "Sobrepeso";
+                else categoria = "Obesidad";
+
+                resultado.innerText = `Tu IMC es ${imc} (${categoria})`;
+                resultado.style.color = "#333";
+            } else {
+                resultado.innerText = "Por favor, ingresa valores válidos.";
+                resultado.style.color = "red";
+            }
+        }
+
+        function calcularAgua() {
+            const peso = parseFloat(document.getElementById('pesoAgua').value);
+            const resultado = document.getElementById('resultadoAgua');
+
+            if (peso > 0) {
+                // Cálculo estándar: 35 ml por cada kg de peso corporal
+                const litros = (peso * 35) / 1000;
+                resultado.innerText = `Debes beber aprox. ${litros.toFixed(1)} litros al día.`;
+                resultado.style.color = "#333";
+            } else {
+                resultado.innerText = "Por favor, ingresa tu peso.";
+                resultado.style.color = "red";
+            }
+        }
+    </script>
 </body>
 </html>
