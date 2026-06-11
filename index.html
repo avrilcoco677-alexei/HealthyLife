@@ -4,286 +4,301 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HealthyLife | Nutrición y Bienestar Integral</title>
-    
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
     <header>
-        <nav>
+        <nav class="nav-container">
             <div class="logo">
-                <h1>🌿 HealthyLife</h1>
+                <h1><i class="fa-solid fa-leaf"></i> HealthyLife</h1>
                 <p>Nutrición y Bienestar Integral</p>
             </div>
-            <ul>
+            <ul class="nav-menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#equipo">Equipo</a></li>
                 <li><a href="#planes">Planes</a></li>
                 <li><a href="#tienda">Tienda</a></li>
-                <li><a href="#imc">IMC</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#widgets">Herramientas</a></li>
+                <li><a href="#contacto" class="btn-nav">Agendar Cita</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="inicio" class="hero">
-        <h2>Transforma tu vida con una alimentación saludable</h2>
-        <p>HealthyLife te acompaña en el camino hacia una mejor salud mediante planes nutricionales personalizados y asesoría profesional.</p>
-        <a href="#planes">
-            <button>Descubrir Planes</button>
-        </a>
+        <div class="hero-content">
+            <h2>Transforma tu vida con una alimentación saludable</h2>
+            <p>HealthyLife te acompaña en el camino hacia una mejor salud mediante planes nutricionales personalizados y asesoría profesional.</p>
+            <a href="#planes" class="btn-primary">Descubrir Planes <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
     </section>
 
-    <section id="nosotros">
-        <h2>Sobre HealthyLife</h2>
-        <p>HealthyLife nació con el objetivo de promover hábitos saludables y mejorar la calidad de vida de las personas mediante una alimentación equilibrada. Creemos que una buena nutrición es la base para una vida plena y saludable.</p>
-        <br>
-        <h3>Fundadora</h3>
-        <p>Hola, soy Avril Hernández. Fundé HealthyLife con la misión de ayudar a las personas a alcanzar sus objetivos de bienestar físico y emocional mediante orientación nutricional confiable y personalizada.</p>
+    <section id="nosotros" class="about-section">
+        <div class="container">
+            <h2>Sobre HealthyLife</h2>
+            <p class="section-subtitle">Creemos que una buena nutrición es la base para una vida plena y saludable.</p>
+            <div class="about-grid">
+                <div class="about-block">
+                    <h3><i class="fa-solid fa-seedling"></i> Nuestra Misión</h3>
+                    <p>HealthyLife nació con el objetivo de promover hábitos saludables y mejorar la calidad de vida de las personas mediante una alimentación equilibrada adaptada al ritmo de vida actual.</p>
+                </div>
+                <div class="about-block fundadora-box">
+                    <h3><i class="fa-solid fa-user-doctor"></i> Fundadora</h3>
+                    <p><strong>Avril Hernández:</strong> Fundé HealthyLife con la misión de ayudar a las personas a alcanzar sus objetivos de bienestar físico y emocional mediante orientación nutricional confiable y personalizada.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="estadisticas">
-        <div class="stat">
+        <div class="stat-card">
             <h3>500+</h3>
             <p>Pacientes Atendidos</p>
         </div>
-        <div class="stat">
+        <div class="stat-card">
             <h3>50+</h3>
             <p>Planes Personalizados</p>
         </div>
-        <div class="stat">
+        <div class="stat-card">
             <h3>98%</h3>
             <p>Satisfacción</p>
         </div>
-        <div class="stat">
-            <h3>3</h3>
+        <div class="stat-card">
+            <h3>3+</h3>
             <p>Años de Experiencia</p>
         </div>
     </section>
 
     <section id="servicios">
-        <h2>Servicios</h2>
-        <div class="cards">
-            <div class="card">
+        <h2>Nuestros Servicios</h2>
+        <p class="text-center section-subtitle">Especialidades diseñadas para cada necesidad clínica y deportiva.</p>
+        <div class="cards-grid">
+            <div class="card-item">
+                <div class="card-icon"><i class="fa-solid fa-weight-scale"></i></div>
                 <h3>Control de Peso</h3>
-                <p>Planes enfocados en pérdida o aumento de peso.</p>
+                <p>Planes enfocados en pérdida, mantenimiento o aumento de peso de forma saludable.</p>
             </div>
-            <div class="card">
+            <div class="card-item">
+                <div class="card-icon"><i class="fa-solid fa-dumbbell"></i></div>
                 <h3>Nutrición Deportiva</h3>
-                <p>Optimización del rendimiento físico.</p>
+                <p>Optimización del rendimiento físico y composición corporal para atletas.</p>
             </div>
-            <div class="card">
+            <div class="card-item">
+                <div class="card-icon"><i class="fa-solid fa-child"></i></div>
                 <h3>Nutrición Infantil</h3>
-                <p>Alimentación adecuada para niños.</p>
+                <p>Alimentación adecuada y desarrollo de hábitos correctos desde la infancia.</p>
             </div>
-            <div class="card">
+            <div class="card-item">
+                <div class="card-icon"><i class="fa-solid fa-person-cane"></i></div>
                 <h3>Adultos Mayores</h3>
-                <p>Planes adaptados a cada etapa de la vida.</p>
+                <p>Planes nutricionales adaptados para mejorar la vitalidad en esta etapa de la vida.</p>
             </div>
         </div>
     </section>
 
-    <section id="equipo">
-        <h2>Nuestro Equipo</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="images/avril.jpeg" alt="Avril Hernández" class="equipo-img">
+    <section id="equipo" class="bg-alt">
+        <h2>Nuestro Equipo Profesional</h2>
+        <div class="cards-grid">
+            <div class="card-member">
+                <div class="avatar-wrapper">
+                    <img src="imagenes/avril.jpg" alt="Avril Hernández" onerror="this.src='https://images.unsplash.com/photo-1594824813573-246434e33963?w=400'">
+                </div>
                 <h3>Avril Hernández</h3>
-                <p>Fundadora y Nutrióloga</p>
+                <p class="role">Fundadora y Nutrióloga Clínica</p>
             </div>
-            <div class="card">
-                <img src="images/alexei.jpeg" alt="Alexei Padilla" class="equipo-img">
+            <div class="card-member">
+                <div class="avatar-wrapper">
+                    <img src="imagenes/alexei.jpg" alt="Alexei Padilla" onerror="this.src='https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400'">
+                </div>
                 <h3>Alexei Padilla</h3>
-                <p>Especialista en Nutrición Deportiva</p>
+                <p class="role">Especialista en Nutrición Deportiva</p>
             </div>
-            <div class="card">
-                <img src="images/anayeli.jpeg" alt="Anayeli Colin" class="equipo-img">
+            <div class="card-member">
+                <div class="avatar-wrapper">
+                    <img src="imagenes/anayeli.jpg" alt="Anayeli Colin" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400'">
+                </div>
                 <h3>Anayeli Colin</h3>
-                <p>Coach de Bienestar y Hábitos Saludables</p>
+                <p class="role">Coach de Bienestar y Hábitos</p>
             </div>
         </div>
     </section>
 
     <section id="planes">
         <h2>Planes Nutricionales</h2>
-        <div class="cards">
-            <div class="card">
+        <div class="cards-grid">
+            <div class="card-price">
                 <h3>Plan Básico</h3>
-                <p>Plan alimenticio personalizado.</p>
-                <h4>$499 MXN</h4>
+                <div class="price">$499 <span>MXN</span></div>
+                <p>Plan alimenticio mensual personalizado con revisiones básicas.</p>
+                <a href="#contacto" class="btn-card">Adquirir Plan</a>
             </div>
-            <div class="card">
+            <div class="card-price popular">
+                <div class="badge">Más Elegido</div>
                 <h3>Plan Premium</h3>
-                <p>Seguimiento semanal y asesoría continua.</p>
-                <h4>$899 MXN</h4>
+                <div class="price">$899 <span>MXN</span></div>
+                <p>Seguimiento semanal, soporte por WhatsApp continuo y ajustes de menú.</p>
+                <a href="#contacto" class="btn-card">Adquirir Plan</a>
             </div>
-            <div class="card">
+            <div class="card-price">
                 <h3>Plan Deportivo</h3>
-                <p>Nutrición especializada para deportistas.</p>
-                <h4>$1,199 MXN</h4>
+                <div class="price">$1,199 <span>MXN</span></div>
+                <p>Nutrición especializada para atletas de alto rendimiento con cálculo de macros.</p>
+                <a href="#contacto" class="btn-card">Adquirir Plan</a>
             </div>
         </div>
     </section>
 
-    <section id="tienda">
+    <section id="tienda" class="bg-alt">
         <h2>Tienda Saludable</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="images/avena.jpeg" alt="Avena Integral" class="producto-img">
+        <div class="cards-grid">
+            <div class="card-product">
+                <img src="imagenes/avena.jpg" alt="Avena Integral" onerror="this.src='https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=400'">
                 <h3>Avena Integral</h3>
-                <p>$80 MXN</p>
-                <button>Agregar al carrito</button>
+                <p class="price-prod">$80 MXN</p>
+                <button class="btn-product"><i class="fa-solid fa-cart-shopping"></i> Agregar</button>
             </div>
-            <div class="card">
-                <img src="images/almendras.jpeg" alt="Almendras" class="producto-img">
+            <div class="card-product">
+                <img src="imagenes/almendras.jpg" alt="Almendras" onerror="this.src='https://images.unsplash.com/photo-1508061253366-f7da158b6d46?w=400'">
                 <h3>Almendras Naturales</h3>
-                <p>$120 MXN</p>
-                <button>Agregar al carrito</button>
+                <p class="price-prod">$120 MXN</p>
+                <button class="btn-product"><i class="fa-solid fa-cart-shopping"></i> Agregar</button>
             </div>
-            <div class="card">
-                <img src="images/te-verde.jpeg" alt="Té Verde" class="producto-img">
-                <h3>Té Verde</h3>
-                <p>$90 MXN</p>
-                <button>Agregar al carrito</button>
+            <div class="card-product">
+                <img src="imagenes/te-verde.jpg" alt="Té Verde" onerror="this.src='https://images.unsplash.com/photo-1531973968078-9bb02785f13d?w=400'">
+                <h3>Té Verde Orgánico</h3>
+                <p class="price-prod">$90 MXN</p>
+                <button class="btn-product"><i class="fa-solid fa-cart-shopping"></i> Agregar</button>
             </div>
         </div>
     </section>
 
     <section id="recetas">
-        <h2>Recetas Saludables</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="images/smoothie.jpeg" alt="Smoothie" class="producto-img">
-                <h3>Smoothie Antioxidante</h3>
-                <p>Frutos rojos, yogurt griego y avena.</p>
+        <h2>Recetas Rápidas y Saludables</h2>
+        <div class="cards-grid">
+            <div class="card-recipe">
+                <img src="imagenes/smoothie.jpg" alt="Smoothie" onerror="this.src='https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400'">
+                <div class="recipe-info">
+                    <h3>Smoothie Antioxidante</h3>
+                    <p>Frutos rojos, yogurt griego sin azúcar y avena integral.</p>
+                </div>
             </div>
-            <div class="card">
-                <img src="images/ensalada.jpeg" alt="Ensalada" class="producto-img">
-                <h3>Ensalada Mediterránea</h3>
-                <p>Vegetales frescos, aceite de oliva y queso fresco.</p>
+            <div class="card-recipe">
+                <img src="imagenes/ensalada.jpg" alt="Ensalada" onerror="this.src='https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400'">
+                <div class="recipe-info">
+                    <h3>Ensalada Mediterránea</h3>
+                    <p>Vegetales frescos, aceite de oliva virgen extra y queso fresco.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="imc">
-        <h2>Calculadora IMC</h2>
-        <div class="imc-box">
-            <input type="number" id="peso" placeholder="Peso en kg">
-            <input type="number" id="altura" placeholder="Altura en metros (ej. 1.70)">
-            <button onclick="calcularIMC()">Calcular IMC</button>
-            <h3 id="resultado"></h3>
-        </div>
-    </section>
+    <section id="widgets" class="bg-alt">
+        <h2>Herramientas de Salud</h2>
+        <div class="widgets-grid">
+            <div class="widget-box">
+                <h3><i class="fa-solid fa-calculator"></i> Calculadora de IMC</h3>
+                <div class="input-group">
+                    <label for="peso">Peso Corporal (kg):</label>
+                    <input type="number" id="peso" placeholder="Ej. 70" step="0.1">
+                </div>
+                <div class="input-group">
+                    <label for="altura">Estatura o Altura (m):</label>
+                    <input type="number" id="altura" placeholder="Ej. 1.72" step="0.01">
+                </div>
+                <button onclick="calcularIMC()" class="btn-widget">Calcular Mi IMC</button>
+                <div id="resultado" class="widget-result"></div>
+            </div>
 
-    <section id="agua">
-        <h2>Calculadora de Agua Diaria</h2>
-        <div class="imc-box">
-            <input type="number" id="pesoAgua" placeholder="Peso en kg">
-            <button onclick="calcularAgua()">Calcular Agua</button>
-            <h3 id="resultadoAgua"></h3>
+            <div class="widget-box">
+                <h3><i class="fa-solid fa-droplet"></i> Consumo de Agua Diaria</h3>
+                <div class="input-group">
+                    <label for="pesoAgua">Peso Corporal (kg):</label>
+                    <input type="number" id="pesoAgua" placeholder="Ej. 65">
+                </div>
+                <button onclick="calcularAgua()" class="btn-widget">Calcular Hidratación</button>
+                <div id="resultadoAgua" class="widget-result"></div>
+            </div>
         </div>
     </section>
 
     <section id="testimonios">
-        <h2>Testimonios</h2>
-        <div class="cards">
-            <div class="card">
-                <p>"Gracias a HealthyLife mejoré mis hábitos alimenticios."</p>
+        <h2>Casos de Éxito</h2>
+        <div class="cards-grid">
+            <div class="card-testimonio">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Gracias a HealthyLife logré reestructurar mis menús sin pasar hambre y bajé mis niveles de colesterol."</p>
                 <strong>- María González</strong>
             </div>
-            <div class="card">
-                <p>"Excelente atención y resultados."</p>
+            <div class="card-testimonio">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Excelente atención profesional. Los planes se adaptan 100% a mis horarios de entrenamiento matutino."</p>
                 <strong>- Carlos Ramírez</strong>
             </div>
-            <div class="card">
-                <p>"Los planes nutricionales son muy completos."</p>
+            <div class="card-testimonio">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Los materiales digitales y las recetas son didácticas y deliciosas. Muy recomendado."</p>
                 <strong>- Ana Pérez</strong>
             </div>
         </div>
     </section>
 
-    <section id="faq">
+    <section id="faq" class="bg-alt">
         <h2>Preguntas Frecuentes</h2>
-        <div class="faq-item">
-            <h3>¿Los planes son personalizados?</h3>
-            <p>Sí, cada plan se adapta a las necesidades del usuario.</p>
-        </div>
-        <div class="faq-item">
-            <h3>¿Ofrecen consultas virtuales?</h3>
-            <p>Sí, contamos con asesorías en línea.</p>
-        </div>
-        <div class="faq-item">
-            <h3>¿Cómo puedo agendar una cita?</h3>
-            <p>Utilizando el formulario de contacto.</p>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>¿Los planes son personalizados?</h3>
+                <p>Sí, cada plan se diseña de manera individualizada tomando en cuenta tu historial clínico, gustos y metas específicas.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Ofrecen consultas virtuales?</h3>
+                <p>Sí, contamos con plataforma de videollamada para atenderte sin importar en qué ciudad te encuentres.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Cómo puedo agendar una cita?</h3>
+                <p>Puedes llenar el formulario que se encuentra justo abajo o escribirnos directamente a nuestro canal oficial de WhatsApp.</p>
+            </div>
         </div>
     </section>
 
-    <section id="contacto">
-        <h2>Agenda una Cita</h2>
-        <form>
-            <input type="text" placeholder="Nombre completo" required>
-            <input type="email" placeholder="Correo electrónico" required>
-            <input type="date" required>
-            <textarea placeholder="Describe tu objetivo nutricional" required></textarea>
-            <button type="submit">Solicitar Cita</button>
+    <section id="contacto" class="contact-section">
+        <h2>Agenda una Consulta</h2>
+        <p class="text-center">Completa tus datos y un especialista se comunicará contigo para confirmar tu horario.</p>
+        <form class="appointment-form" id="formCita">
+            <div class="form-group">
+                <input type="text" id="formNombre" placeholder="Nombre completo" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="formCorreo" placeholder="Correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <input type="date" id="formFecha" required>
+            </div>
+            <div class="form-group">
+                <textarea id="formObjetivo" placeholder="Describe brevemente tu objetivo nutricional (Ej. Rendimiento, bajar de peso, salud general...)" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Solicitar Cita de Registro</button>
         </form>
     </section>
 
     <footer>
-        <h3>🌿 HealthyLife</h3>
-        <p>Nutrición y Bienestar Integral</p>
-        <p>Solicita una asesoría nutricional personalizada.</p>
-        <div class="redes">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">TikTok</a>
-            <a href="https://wa.me/524471673862">WhatsApp</a>
+        <div class="footer-content">
+            <h3>🌿 HealthyLife</h3>
+            <p>Tu salud en manos de expertos comprometidos con tu bienestar integral.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://wa.me/524471673862" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <hr class="footer-divider">
+            <p class="copyright">© 2026 HealthyLife. Todos los derechos reservados por Alumnos de Ofimática.</p>
         </div>
-        <p>© 2026 Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Scripts para las calculadoras -->
-    <script>
-        function calcularIMC() {
-            const peso = parseFloat(document.getElementById('peso').value);
-            const altura = parseFloat(document.getElementById('altura').value);
-            const resultado = document.getElementById('resultado');
-
-            if (peso > 0 && altura > 0) {
-                const imc = (peso / (altura * altura)).toFixed(1);
-                let categoria = "";
-                
-                if (imc < 18.5) categoria = "Bajo peso";
-                else if (imc >= 18.5 && imc <= 24.9) categoria = "Peso normal";
-                else if (imc >= 25 && imc <= 29.9) categoria = "Sobrepeso";
-                else categoria = "Obesidad";
-
-                resultado.innerText = `Tu IMC es ${imc} (${categoria})`;
-                resultado.style.color = "#333";
-            } else {
-                resultado.innerText = "Por favor, ingresa valores válidos.";
-                resultado.style.color = "red";
-            }
-        }
-
-        function calcularAgua() {
-            const peso = parseFloat(document.getElementById('pesoAgua').value);
-            const resultado = document.getElementById('resultadoAgua');
-
-            if (peso > 0) {
-                // Cálculo estándar: 35 ml por cada kg de peso corporal
-                const litros = (peso * 35) / 1000;
-                resultado.innerText = `Debes beber aprox. ${litros.toFixed(1)} litros al día.`;
-                resultado.style.color = "#333";
-            } else {
-                resultado.innerText = "Por favor, ingresa tu peso.";
-                resultado.style.color = "red";
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
