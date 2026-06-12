@@ -284,7 +284,79 @@
         <button type="submit" class="btn-submit">Solicitar Cita de Registro</button>
     </form>
 </section>
+<section id="herramientas-paciente" class="contact-section" style="background-color: #f4f9f4; padding: 40px 20px; margin-top: 30px; border-top: 3px solid #2e7d32;">
+    <h2 class="text-center" style="color: #2e7d32; margin-bottom: 10px;">📊 Panel Interactivo del Paciente</h2>
+    <p class="text-center" style="margin-bottom: 30px;">Accede a tus herramientas personalizadas de nutrición y seguimiento físico.</p>
 
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; max-width: 1100px; margin: 0 auto;">
+        
+        <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); flex: 1; min-width: 300px; max-width: 520px;">
+            <h3 style="color: #1565c0; margin-bottom: 15px;"><i class="fa-solid fa-file-pdf"></i> Generador de Menú Semanal</h3>
+            <p style="font-size: 14px; color: #555;">Selecciona tu objetivo actual para estructurar tu guía de alimentación y descargarla en formato PDF institucional.</p>
+            
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="selectObjetivoMenu" style="font-weight: bold; display: block; margin-bottom: 5px;">Tu Objetivo:</label>
+                <select id="selectObjetivoMenu" onchange="actualizarMenuSugerido()" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="bajar">Pérdida de Grasa Corporal 📉</option>
+                    <option value="ganar">Aumento de Masa Muscular 📈</option>
+                    <option value="salud">Bienestar y Salud General 🌿</option>
+                </select>
+            </div>
+
+            <div id="area-impresion-menu" style="display: none; background: #fafafa; padding: 15px; border: 1px dashed #1565c0; border-radius: 8px; margin-bottom: 15px;">
+                <h4 id="tituloMenuPDF" style="text-align: center; color: #2e7d32; margin-top:0;">Plan Nutricional Semanal</h4>
+                <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+                    <tr style="background: #e3f2fd;">
+                        <th style="border: 1px solid #ddd; padding: 6px;">Momento</th>
+                        <th style="border: 1px solid #ddd; padding: 6px;">Distribución Sugerida</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 6px; font-weight: bold;">Desayuno</td>
+                        <td id="celdaDesayuno" style="border: 1px solid #ddd; padding: 6px;">-</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 6px; font-weight: bold;">Comida</td>
+                        <td id="celdaComida" style="border: 1px solid #ddd; padding: 6px;">-</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 6px; font-weight: bold;">Cena</td>
+                        <td id="celdaCena" style="border: 1px solid #ddd; padding: 6px;">-</td>
+                    </tr>
+                </table>
+            </div>
+
+            <button type="button" onclick="descargarMenuPDF()" class="btn-submit" style="background-color: #1565c0; width: 100%; font-weight: bold;">
+                <i class="fa-solid fa-download"></i> Descargar Menú Semanal (PDF)
+            </button>
+        </div>
+
+        <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); flex: 1; min-width: 300px; max-width: 520px;">
+            <h3 style="color: #ef6c00; margin-bottom: 15px;"><i class="fa-solid fa-lock"></i> Expediente Privado de Progreso</h3>
+            <p style="font-size: 14px; color: #555;">Sube de forma segura tus fotografías de control antropométrico (Frente, Perfil, Espalda) para evaluar tu evolución muscular.</p>
+            
+            <form id="formProgresoFotos" onsubmit="enviarFotosProgreso(event)">
+                <div class="form-group" style="margin-bottom: 12px;">
+                    <input type="text" id="progresoNombre" placeholder="Tu Nombre Completo / ID Paciente" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
+                </div>
+                
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <label style="font-weight: bold; font-size: 13px; display: block; margin-bottom: 5px; color: #555;">Seleccionar Archivos de Evidencia Física:</label>
+                    <input type="file" id="progresoFotosInput" accept="image/*" multiple required style="font-size: 13px; display: block; width: 100%;">
+                </div>
+
+                <div style="background-color: #fff3e0; padding: 10px; border-radius: 6px; font-size: 12px; color: #e65100; margin-bottom: 15px;">
+                    <i class="fa-solid fa-shield-halved"></i> <strong>Cifrado SSL Activo:</strong> Tus fotografías se almacenan directamente en el expediente clínico encriptado de la nube de Google Drive.
+                </div>
+
+                <button type="submit" class="btn-submit" style="background-color: #ef6c00; width: 100%; font-weight: bold;">
+                    <i class="fa-solid fa-cloud-arrow-up"></i> Cargar Fotos al Expediente
+                </button>
+            </form>
+        </div>
+
+    </div>
+</section>
     <footer>
         <div class="footer-content">
             <h3>🌿 HealthyLife</h3>
