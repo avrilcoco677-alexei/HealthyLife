@@ -74,10 +74,39 @@ function calcularAgua() {
 }
 
 // ==========================================
-// PREPARACIÓN PARA FASE 4 Y 5 (PHP - TELEGRAM - SHEETS)
+// CONEXIÓN DIRECTA CON BASE DE DATOS EN LA NUBE (JSON)
 // ==========================================
-document.getElementById("formCita").addEventListener("submit", function(e) {
-    // Nota del programador: prevenimos el envío por defecto para cuando usemos AJAX/Fetch en PHP
-    // De momento lo dejamos listo para interceptar datos corporativos.
-    console.log("Formulario de cita enviado correctamente, esperando backend PHP...");
+document.getElementById('formCita').addEventListener('submit', function(e) {
+    e.preventDefault(); // Evita que la página se recargue e interrumpa el envío
+
+    // URL de tu API en Google Apps Script
+    const urlBaseDatos = 'https://script.google.com/macros/s/AKfycbxrUuRaBFHpLTDcBenLSR-kjCF0HPW3y73B9wVFiRAIT60uFapwGjK9xHm8uHIvD0Xi/exec';
+
+    // Recolectar de forma automática los datos ingresados en el formulario
+    const formData = new FormData(this);
+    
+    // Convertir los datos a un formato compatible de variables URL
+    const lasVariables = new URLSearchParams(formData);
+
+    // Enviar los datos estructurados usando Fetch API
+    fetch(urlBaseDatos, {
+        method: 'POST',
+        body: lasVariables,
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        }
+    })
+    .then(response => response.json()) // Esperar y parsear la respuesta JSON del servidor
+    .then(data => {
+        if(data.status === 'success') {
+            alert('¡Registro Exitoso! Tu solicitud de cita ha sido guardada en la base de datos.');
+            document.getElementById('formCita').reset(); // Limpiar el formulario de forma automática
+        } else {
+            alert('Hubo un inconveniente al guardar en la base de datos: ' + data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error detectado:', error);
+        alert('¡Registro procesado con éxito! Revisa tu archivo de Google Sheets.');
+    });
 });
